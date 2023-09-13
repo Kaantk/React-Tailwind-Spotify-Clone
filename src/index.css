@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+    background-color: black;
+    box-sizing: border-box;
+    overflow-y: hidden;
+  }
+  #root {
+    padding: 8px 8px 0px 8px;
+  }
+}
+
+@layer components {
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    height: 80px;
+  }
+}
+
+@layer components {
+  .w-150 {
+    width: 600px;
+  }
+}
