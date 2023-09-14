@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { Icon } from "~/assets/icons/Icons";
-import Song from "../../assets/images/song.jpg";
+import Song from "~/assets/images/Song.jpg";
 
 export const Playlist = () => {
   return (

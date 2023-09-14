@@ -1,8 +1,8 @@
 import React from "react";
 import { Categories } from "~/components/Search/Categories";
 import { FavoriCategories } from "~/components/Search/FavoriCategories";
-import categories from "~/demoData/categories";
-import favoriteCategories from "~/demoData/favorite-categories";
+import categories from "~/Data/categories";
+import favoriteCategories from "~/Data/favorite-categories";
 
 export const Search = () => {
   return (

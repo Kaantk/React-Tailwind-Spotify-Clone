@@ -1,6 +1,6 @@
 import React from "react";
 import { Row } from "~/components/Home/Row";
-import data from "~/demoData/songs";
+import data from "~/Data/songs";
 
 export const Home = () => {
   return (

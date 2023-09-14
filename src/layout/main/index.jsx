@@ -1,8 +1,8 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import { Sidebar } from "../Index/Sidebar";
-import { Footer } from "../Index/Footer";
-import { Navbar } from "../Index/Navbar";
+import { Sidebar } from "~/layout/main/Sidebar";
+import { Footer } from "~/layout/main/Footer";
+import { Navbar } from "~/layout/main/Navbar";
 
 export const MainLayout = () => {
   return (
@@ -10,10 +10,7 @@ export const MainLayout = () => {
       <div className="flex flex-col">
         <div className="flex flex-1 gap-2">
           <Sidebar />
-          <div
-            className="flex-1 bg-backgdrop rounded-md text-white overflow-y-auto overflow-x-hidden pb-4"
-            style={{ maxHeight: "865px" }}
-          >
+          <div className="flex-1 bg-backgdrop rounded-md text-white overflow-y-auto overflow-x-hidden pb-4 max-h-[865px]">
             <Navbar />
             <Outlet />
           </div>

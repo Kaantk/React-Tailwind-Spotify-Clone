@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { Icon } from "~/assets/icons/Icons";
-import { Playlist } from "~/components/Sidebar/Playlist";
+import { Playlist } from "~/layout/main/Sidebar/Playlist";
 
 export const Sidebar = () => {
   return (
