@@ -5,11 +5,11 @@ import { Playlist } from "~/components/Sidebar/Playlist";
 
 export const Sidebar = () => {
   return (
-    <aside className="w-80 flex flex-col gap-y-1">
+    <aside className="flex flex-col gap-y-1 w-[420px]">
       {/* Sidebar içerisindeki üstteki nav */}
       <nav className="bg-backgdrop w-full rounded-md px-5 py-3 flex flex-col gap-y-3">
         <NavLink
-          to="/home"
+          to="/"
           className="flex items-center gap-3 hover:cursor-pointer"
         >
           <Icon name="home" />

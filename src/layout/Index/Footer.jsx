@@ -2,8 +2,8 @@ import { Icon } from "~/assets/icons/Icons";
 
 export const Footer = () => {
   return (
-    <div className="w-full h-full relative">
-      <div className="absolute left-1/2 transform -translate-x-1/2">
+    <div className="w-full flex items-center justify-center">
+      <div>
         <div className="flex flex-col items-center gap-y-2">
           <div className="flex items-center gap-3">
             <button>
@@ -29,7 +29,7 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="absolute right-0 top-7">
+      <div className="absolute right-2">
         <div className="flex items-center gap-3">
           <button>
             <Icon name="lyrics" size={15} />

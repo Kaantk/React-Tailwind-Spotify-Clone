@@ -6,6 +6,9 @@ export default {
       colors: {
         backgdrop: "#121212",
         link: "#a7a7a7",
+        dark: {
+          gray: "#181818",
+        },
       },
     },
   },
