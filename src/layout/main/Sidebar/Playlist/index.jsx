@@ -1,5 +1,4 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import { Icon } from "~/assets/icons/Icons";
 import Song from "~/assets/images/Song.jpg";
 
@@ -7,15 +6,12 @@ export const Playlist = () => {
   return (
     <div className="w-full flex flex-col h-full gap-y-3">
       <div className="flex items-center justify-between pr-5">
-        <NavLink
-          to="/collection"
-          className="flex items-center gap-3 hover:cursor-pointer"
-        >
+        <div className="flex items-center gap-3 hover:cursor-pointer">
           <Icon name="collection" />
           <span className="text-link hover:text-white text-sm font-semibold">
             Kitaplığın
           </span>
-        </NavLink>
+        </div>
         <div className="flex items-center gap-1">
           <button className="cursor-pointer p-1 hover:bg-gray-50/10 rounded-full ">
             <Icon name="plus" size={17} />
@@ -26,15 +22,15 @@ export const Playlist = () => {
         </div>
       </div>
       <div className="text-white text-xs flex items-center gap-2 overflow-x-hidden whitespace-nowrap mr-5">
-        <NavLink className="py-1 px-2 bg-gray-50/10 rounded-full flex items-center justify-center">
+        <a className="py-1 px-2 bg-gray-50/10 rounded-full flex items-center justify-center">
           Çalma listeleri
-        </NavLink>
-        <NavLink className="py-1 px-2 bg-gray-50/10 rounded-full flex items-center justify-center">
+        </a>
+        <a className="py-1 px-2 bg-gray-50/10 rounded-full flex items-center justify-center">
           Sanatçılar
-        </NavLink>
-        <NavLink className="py-1 px-2 bg-gray-50/10 rounded-full flex items-center justify-center">
+        </a>
+        <a className="py-1 px-2 bg-gray-50/10 rounded-full flex items-center justify-center">
           Podcast'ler ve Programlar
-        </NavLink>
+        </a>
       </div>
       <div className="overflow-y-auto flex-1" style={{ maxHeight: "680px" }}>
         <div className="flex items-center justify-between">
