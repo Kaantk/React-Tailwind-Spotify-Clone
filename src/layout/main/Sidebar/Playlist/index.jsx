@@ -1,13 +1,22 @@
 import React from "react";
+import { useDispatch } from "react-redux";
 import { Icon } from "~/assets/icons/Icons";
 import Song from "~/assets/images/Song.jpg";
+import { toggleIsView } from "~/redux/collection/collectionSlice";
 
 export const Playlist = () => {
+  const dispatch = useDispatch();
+
   return (
     <div className="w-full flex flex-col h-full gap-y-3">
       <div className="flex items-center justify-between pr-5">
-        <div className="flex items-center gap-3 hover:cursor-pointer">
-          <Icon name="collection" />
+        <div
+          className="flex items-center gap-3 hover:cursor-pointer"
+          onClick={() => dispatch(toggleIsView())}
+        >
+          <button>
+            <Icon name="collection" />
+          </button>
           <span className="text-link hover:text-white text-sm font-semibold">
             Kitaplığın
           </span>
@@ -32,7 +41,7 @@ export const Playlist = () => {
           Podcast'ler ve Programlar
         </a>
       </div>
-      <div className="overflow-y-auto flex-1" style={{ maxHeight: "680px" }}>
+      <div className="overflow-y-hidden hover:overflow-y-auto flex-1 max-h-[680px] pr-1">
         <div className="flex items-center justify-between">
           <button className="p-1 hover:bg-gray-50/10 rounded-full">
             <Icon name="search" size={16} />

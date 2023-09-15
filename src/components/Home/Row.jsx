@@ -4,6 +4,8 @@ import { Icon } from "~/assets/icons/Icons";
 export const Row = ({ title, data }) => {
   const [hoveredDiv, setHoveredDiv] = useState(null);
 
+  const handlePlaySong = (songID) => {};
+
   return (
     <div className="w-full flex flex-col">
       <div className="w-full flex items-center justify-between mb-3">
@@ -17,15 +19,15 @@ export const Row = ({ title, data }) => {
           Tümünü göster
         </a>
       </div>
-      <div className="flex gap-5 cursor-pointer ">
+      <div className="flex gap-5 cursor-pointer">
         {data.map((song, id) => {
           return (
             <div
               key={id}
-              className="bg-dark-gray w-40 py-3 rounded-md px-3 flex flex-col items-center h-60 relative"
-              style={{ minWidth: "160px" }}
+              className="bg-dark-gray py-3 rounded-md px-3 flex flex-col items-center h-60 relative w-[160px]"
               onMouseEnter={() => setHoveredDiv(id)}
               onMouseLeave={() => setHoveredDiv(null)}
+              onClick={() => handlePlaySong(song.id)}
             >
               <div className="flex flex-col ">
                 <img

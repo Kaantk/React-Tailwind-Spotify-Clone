@@ -9,6 +9,12 @@ export default {
         dark: {
           gray: "#181818",
         },
+        light: {
+          gray: "#282828",
+        },
+        lighest: {
+          gray: "#a7a7a7",
+        },
       },
     },
   },
