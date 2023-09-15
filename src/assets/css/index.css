@@ -10,10 +10,6 @@
     font-family: "Poppins", sans-serif;
     background-color: black;
     box-sizing: border-box;
-    overflow-y: hidden;
-  }
-  #root {
-    padding: 8px 8px 0px 8px;
   }
 }
 

@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import { Home } from "~/pages/Home";
 import { Search } from "~/pages/Search";
 import { MainLayout } from "~/layout/main";
+import { Login } from "~/pages/Login";
 
 export const routes = createBrowserRouter([
   {
@@ -17,5 +18,9 @@ export const routes = createBrowserRouter([
         element: <Search />,
       },
     ],
+  },
+  {
+    path: "/login",
+    element: <Login />,
   },
 ]);

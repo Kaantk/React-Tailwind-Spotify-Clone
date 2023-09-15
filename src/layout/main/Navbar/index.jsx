@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { Icon } from "~/assets/icons/Icons";
 
 export const Navbar = () => {
@@ -89,7 +89,9 @@ export const Navbar = () => {
                 <span className="text-lighest-gray text-xs">Ayarlar</span>
               </div>
               <div className="flex items-center justify-between w-[180px] px-3 py-2 hover:bg-gray-50/10 rounded-[4px]">
-                <span className="text-lighest-gray text-xs">Oturumu kapat</span>
+                <NavLink to="/login" className="text-lighest-gray text-xs">
+                  Oturumu kapat
+                </NavLink>
               </div>
             </div>
           )}

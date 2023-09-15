@@ -10,7 +10,7 @@ export const MainLayout = () => {
   const isView = useSelector((state) => state.collection.isView);
 
   return (
-    <div className="text-white h-full">
+    <div className="text-white h-full pt-2 pl-2 pr-2">
       <div className="flex flex-col">
         <div className="flex flex-1 gap-2">
           {isView ? <Collection /> : <Sidebar />}

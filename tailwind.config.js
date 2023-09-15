@@ -4,6 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
+        primary: "#1ed760",
         backgdrop: "#121212",
         link: "#a7a7a7",
         dark: {
